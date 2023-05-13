@@ -2,7 +2,7 @@
 // ==UserScript==
 // @name         自动收取每日奖品
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.2
 // @description  try to take over the world!
 // @author       Yihang Gong
 // @match        https://act.hoyolab.com/bbs/event/signin/hkrpg/index.html?act_id=e202303301540311&*
