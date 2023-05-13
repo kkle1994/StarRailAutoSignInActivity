@@ -1,6 +1,6 @@
 
 // ==UserScript==
-// @name         自动收取每日奖品
+// @name         自动收取每日Hoyolab奖品 Automatic collect prize in hoyolab
 // @namespace    http://tampermonkey.net/
 // @version      0.2
 // @description  try to take over the world!
