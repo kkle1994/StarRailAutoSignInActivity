@@ -25,8 +25,9 @@ function StartScript() {
 
     for(var i = 0; i < icons.length; i++) {
         const element = icons[i];
-        if(element.children.length == 4)
+        if(element.children.length == 4) {
             continue;
+        }
         element.click();
     }
 
