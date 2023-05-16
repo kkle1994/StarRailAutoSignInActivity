@@ -13,11 +13,13 @@
 (function() {
     'use strict';
     console.log("Adding event");
+    console.log("Last fresh time:" + new Date())
     setTimeout(() => {
         StartScript();
     }, 20 * 1000);
 })();
 
+var leftSeconds = 3600;
 
 function StartScript() {
     console.log("Automatic prize collection started");
@@ -30,8 +32,20 @@ function StartScript() {
         }
         element.click();
     }
+    StartCountdown();
+}
 
-    setTimeout(() => {
+function StartCountdown() {
+    leftSeconds--;
+    console.log("Left seconds: " + leftSeconds);
+    if(leftSeconds <= 0) {
         location.reload();
-    }, 3600 * 1000);
+    }
+    setTimeout(() => {
+        StartCountdownCopy();
+    }, 1000);
+}
+
+function StartCountdownCopy() {
+    StartCountdown();
 }
